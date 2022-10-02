@@ -6,7 +6,7 @@ pipeline {
      
      stage('install dependenices') { 
         steps { 
-           sh 'apt install'
+           sh 'echo"Hello world"'
         }
       }
      
