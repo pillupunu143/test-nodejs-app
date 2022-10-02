@@ -4,6 +4,12 @@ pipeline {
 
    stages {
      
+     stage('install dependenices') { 
+        steps { 
+           sh 'sudo npm install'
+        }
+      }
+     
      stage('Test') { 
         steps { 
            sh 'echo "testing application..."'
