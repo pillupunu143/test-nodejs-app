@@ -1,10 +1,11 @@
 pipeline { 
   
   agent {
+    node{
     
-    label="slave"
+    label 'slave'
   }
-
+  }
    stages {
      
      stage('install dependenices') { 
