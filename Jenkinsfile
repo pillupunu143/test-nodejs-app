@@ -1,12 +1,15 @@
 pipeline { 
   
-   agent any
+  agent {
+    
+    node="slave"
+  }
 
    stages {
      
      stage('install dependenices') { 
         steps { 
-           sh 'echo"Hello world"'
+           sh 'echo "Hello world"'
         }
       }
      
